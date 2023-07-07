@@ -5,6 +5,10 @@ from app.routers import user, contact
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
+"""
+Основной модуль приложения FastAPI. Он инициализирует приложение и настраивает маршруты и middleware.
+"""
+
 app = FastAPI()
 
 app.include_router(user.router)
